@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cire seu personagem aqui</title>
+</head>
+<body background="img/dado.jpg" text="#f6fa02">
+
+    <h1 align="center">Vamos criar um personagem de RPG?</h1>
+    <h2 align="center">Vem comigo que eu te explico</h2>
+
+    <table align="center" bordercolor="silver" border="5">
+    <tr>
+<td>
+        <fieldset>
+            <form action="#" method="post" name="ficha">
+            <fieldset>
+                <legend>Dados gerais</legend>
+
+                    <table>
+
+                        <tr>
+                            <td><label>Nome:</label></td>
+                            <td><input type="text" name="nome" id="nome" required
+                                placeholder="Escolha um nome legal (:"/></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><label>Raça:</label></td>
+                            <td><select nome="raca" id="raca" required>
+                                <option selected="selected">--Selecione--</option>
+                                <option value="humano">Humano</option>
+                                <option value="Elfo">Elfo</option>
+                                <option value="Anão">Anão</option>
+                                <option value="Minotauro">Minotauro</option>
+                                <option value="Gnomo">Gnomo</option>
+                                <option value="Goblin">Goblin</option>
+                                <option value="Tiefling">Tiefling</option>
+                                <option value="Halfling">Halfling</option>
+                            </select></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Classe:</label></td>
+                            <td><select name="classe" id="classe" required>
+                                <option selected="selected">--Selecione--</option>
+                                <option value="Guerreiro">Guerreiro</option>
+                                <option value="cavaleiro">cavaleiro</option>
+                                <option value="Arqueiro">Arqueiro</option>
+                                <option value="Caçador">Caçador</option>
+                                <option value="Ranger">Ranger</option>
+                                <option value="Mago">Mago</option>
+                                <option value="Bruxo">Bruxo</option>
+                                <option value="Elementalista">Elementalista</option>
+                                <option value="Ladino">Ladino</option>
+                                <option value="Ladrão">Ladrão</option>
+                                <option value="Ninja">Ninja</option>
+                                <option value="Clérigo">Clérigo</option>
+                                <option value="Sacerdote">Sacerdote</option>
+                                <option value="Curandeiro">Curandeiro</option>
+                                <option value="Paladino">Paladino</option>
+                                <option value="Templário">Templário</option>
+                                <option value="Feiticeiro">Feiticeiro</option>
+                                <option value="Invocador">Invocador</option>
+                                <option value="Necromante">Necromante</option>                      
+                            </select></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Sexo:</label></td>
+                            <td><label><input type="radio" name="sexo" id="sexo" value="f" required/> Feminino </label><br/>
+                                <label><input type="radio" name="sexo" id="sexo" value="m" required/> Masculino</label><br>
+                                <label><input type="radio" name="sexo" id="sexo" value="i" required/> Indefinido</label></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Idade:</label></td>
+                            <td><input type="number" size="3" name="idade" id="idade" min="1" required
+                                placeholder="Aqui vai a idade dele(a)"/></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Altura:</label></td>
+                            <td><input type="number" name="altura" id="altura" required
+                                placeholder="E aqui vai a altura"/></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Peso:</label></td>
+                            <td><input type="number" name="peso" id="peso" required
+                                placeholder="Agora o peso"/></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Cabelo:</label></td>
+                            <td><input type="color" name="cabelo" id="cabelo"/></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Olhos:</label></td>
+                            <td><input type="color" name="Olhos" id="Olhos"/></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Aparência e personalidade:</label></td>
+                            <td><textarea name="aparencia" id="aparencia" cols="30" rows="7" required
+                                maxlength="500" placeholder="Descreva aqui seu personagem"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Jogador:</label></td>
+                            <td><input type="text" name="Jogador" id="Jogador" required
+                                placeholder="Seu nome meu bem"/></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Cenário:</label></td>
+                            <td><textarea name="cenario" id="cenario" cols="30" rows="3" disabled
+                                placeholder="Coloque aqui o cenário em que está inserido"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Aventura/Campanha:</label></td>
+                            <td><input type="text" name="aventura" id="aventura" size="30"
+                                value="Em busca do tesouro de Skylord" readonly/></td>
+                        </tr>                                
+                        
+                    </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pontos de atributo</legend>
+
+                <table>
+
+                    <tr>
+                        <td><label>Força:</label></td>
+                        <td>0<input type="range" min="0" max="100" value="0"/>100</td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Destreza:</label></td>
+                        <td>0<input type="range" min="0" max="100" value="0"/>100</td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Constituição:</label></td>
+                        <td>0<input type="range" min="0" max="100" value="0"/>100</td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Inteligência:</label></td>
+                        <td>0<input type="range" min="0" max="100" value="0"/>100</td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Sabedoria:</label></td>
+                        <td>0<input type="range" min="0" max="100" value="0"/>100</td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Carisma:</label></td>
+                        <td>0<input type="range" min="0" max="100" value="0"/>100</td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Poder:</label></td>
+                        <td>0<input type="range" min="0" max="100" value="0"/>100</td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Pontos de vida:</label></td>
+                        <td>0<input type="range" min="0" max="100" value="0"/>100</td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Pontos de energia:</label></td>
+                        <td>0<input type="range" min="0" max="100" value="0"/>100</td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Armadura(?):</label></td>
+                        <td>0<input type="range" min="0" max="100" value="0"/>100</td>
+                    </tr>
+
+                </table>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Um pouco mais sobre seu personagem</legend>
+
+                <table>
+
+                    <tr>
+                        <td><label>Vantagens</label></td>
+                        <td><textarea name="vantagens" id="vantagens" cols="30" rows="7" required
+                            placeholder="Coloque aqui as vantagens dele(a)"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Desvantagens</label></td>
+                        <td><textarea name="desvantagens" id="desvantagens" cols="30" rows="7" required
+                            placeholder="Coloque aqui as desvantagens dele(a)"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" colspan="2"><button type="submit">ENVIAR AO SEU MESTRE</button>
+                        <button type="reset">ISSO IRÁ APAGAR TUDO!</button></td>
+                    </tr>
+
+                </table>
+
+            </fieldset>
+            <!--combate, perícias, vantages e desvantagens-->
+        </form>
+        </fieldset>
+    </td>
+    </tr>
+    </table>
+
+    <footer align="right"><small>Copyright© 2022</small></footer>
+    
+</body>
+</html>
